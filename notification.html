@@ -2,9 +2,15 @@
 </head>
 
 <body>
-  {{> hello}}
+	<ul>
+		{{#each jobs}}
+			{{> job}}
+		{{/each}}
+    </ul>
 </body>
 
-<template name="hello">
-  Hello, Meteor!
+<template name="job">
+  
+	<li>{{title}}</li>
+	
 </template>
